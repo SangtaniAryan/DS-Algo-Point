@@ -6,33 +6,33 @@ public class Bracket {
          Scanner sc=new Scanner(System.in);
         int flag=0;
         System.out.print("Enter the expression :"); //User interaction lines
-        String S=sc.next();
+        String S=sc.next(); //Alphabetic Characters to Process and Store in a variable
         Stack<Character> brace=new Stack<Character>();
-        for(int i=0;i<S.length();i++)
+        for(int i=0;i<S.length();i++) //defined variable I as integer data type 
         {
             if(S.charAt(i)=='{' || S.charAt(i)=='[' || S.charAt(i)=='(')
             { 
                 brace.add(S.charAt(i));
 
-            }
+            } //if condition is used with multiple AND function to retrieve proper results
             if(brace.isEmpty())
             {
                flag=1;
            
                 break;
-            }
+            } //This is another exit part for code if code doesn't work or isempty then this code is apply
             if(S.charAt(i)=='}' )
             {
                 if(brace.peek()=='{')
                 {
                     brace.pop();
-                }
+                } //if bracket is open from one side and also from other this if condition is apply
                 else
                 {
                    flag=1;
                
                     break;
-                }
+                } // or else unbalance result is generate
             }
             if(S.charAt(i)==']' )
             {
