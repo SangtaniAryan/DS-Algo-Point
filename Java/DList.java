@@ -6,7 +6,7 @@ class DListNode{
 
     DListNode() {
         item = 0;
-        prev = null;
+        prev = null; //please accept my pull request 
         next = null;
     }
 
@@ -36,7 +36,7 @@ public class DList {
         tail = head;
         head.item = a;
         size = 1;
-    }
+    } //please accept my pull request 
 
     public DList(int a, int b) {
         head = new DListNode();
