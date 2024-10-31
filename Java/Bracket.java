@@ -5,7 +5,7 @@ public class Bracket {
     {    
          Scanner sc=new Scanner(System.in);
         int flag=0;
-        System.out.print("Enter the expression :");
+        System.out.print("Enter the expression :"); //User interaction lines
         String S=sc.next();
         Stack<Character> brace=new Stack<Character>();
         for(int i=0;i<S.length();i++)
